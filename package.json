@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "concurrently -k -n FRONTEND,BACKEND \"npm --prefix frontend run dev\" \"backend\\.venv\\Scripts\\python.exe -m uvicorn main:app --app-dir backend --reload --port 8000\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
